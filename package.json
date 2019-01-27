@@ -1,0 +1,26 @@
+{
+    "name": "traner-of-peripheral-vision",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "webpack --mode development --watch",
+        "build": "webpack --mode production"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Aparin/traner-of-peripheral-vision.git"
+    },
+    "author": "Апарин Александр",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Aparin/traner-of-peripheral-vision/issues"
+    },
+    "homepage": "https://github.com/Aparin/traner-of-peripheral-vision#readme",
+    "devDependencies": {
+        "css-loader": "^2.1.0",
+        "style-loader": "^0.23.1",
+        "webpack": "^4.29.0",
+        "webpack-cli": "^3.2.1"
+    }
+}
