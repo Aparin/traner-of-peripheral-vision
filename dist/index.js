@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"h1,\\r\\nh2 {\\r\\n    color: blue;\\r\\n    margin: 0 auto;\\r\\n}\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/main.css?./node_modules/css-loader/dist/cjs.js");
+eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"h1,\\r\\nh2 {\\r\\n    color: blue;\\r\\n    margin: 0 auto;\\r\\n}\\r\\n\\r\\n#root {\\r\\n    width: 680px;\\r\\n}\\r\\n\\r\\n.red,\\r\\n.green {\\r\\n    color: white;\\r\\n    font-size: 18px;\\r\\n    font-family: Georgia, 'Times New Roman', Times, serif;\\r\\n    width: 120px;\\r\\n    height: 120px;\\r\\n    display: inline-block;\\r\\n    padding: 5px;\\r\\n    border: 1px solid white;\\r\\n}\\r\\n\\r\\n.red {\\r\\n    background-color: red;\\r\\n}\\r\\n\\r\\n.green {\\r\\n    background-color: green;\\r\\n}\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/main.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -139,7 +139,7 @@ eval("\n/**\n * When source maps are enabled, `style-loader` uses a link element
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _main_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./main.css */ \"./src/main.css\");\n/* harmony import */ var _main_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_main_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _mapGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./mapGenerator */ \"./src/mapGenerator.js\");\n\r\n\r\n\r\nconsole.log(Object(_mapGenerator__WEBPACK_IMPORTED_MODULE_1__[\"default\"])());\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _main_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./main.css */ \"./src/main.css\");\n/* harmony import */ var _main_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_main_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _squaresToPage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./squaresToPage */ \"./src/squaresToPage.js\");\n\r\n\r\n\r\nObject(_squaresToPage__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
@@ -162,7 +162,19 @@ eval("\nvar content = __webpack_require__(/*! !../node_modules/css-loader/dist/c
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return mapGenerator; });\nfunction mapGenerator() {\r\n  let green = 0, red = 0;\r\n  let arr = [];\r\n\r\n  for (let i = 1; i < 26; i++) {\r\n    const rand = Math.random();\r\n\r\n    if (green === 13) {\r\n      red++;\r\n      arr.push('red');\r\n      continue;\r\n    }\r\n\r\n    if (red === 12) {\r\n      green++;\r\n      arr.push('green');\r\n      continue;\r\n    }\r\n\r\n    if (rand >= 0.5) {\r\n      green++;\r\n      arr.push('green');\r\n    }\r\n    else {\r\n      red++;\r\n      arr.push('red');\r\n    }\r\n  }\r\n  return [red, green, arr];\r\n}\r\n\n\n//# sourceURL=webpack:///./src/mapGenerator.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return mapGenerator; });\nfunction mapGenerator() {\r\n  let arr = [];\r\n\r\n  for (let red = 1; red <= 12; red++) {\r\n    arr.push(`<div id=\"red${red}\" class=\"red\">${red}</div>`);\r\n  }\r\n  for (let green = 1; green <= 13; green++) {\r\n    arr.push(`<div id=\"green${green}\" class=\"green\">${green}</div>`);\r\n  }\r\n\r\n  return arr;\r\n}\r\n\n\n//# sourceURL=webpack:///./src/mapGenerator.js?");
+
+/***/ }),
+
+/***/ "./src/squaresToPage.js":
+/*!******************************!*\
+  !*** ./src/squaresToPage.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return squaresToPage; });\n/* harmony import */ var _mapGenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./mapGenerator */ \"./src/mapGenerator.js\");\n\r\n\r\nfunction squaresToPage() {\r\n  const arr = Object(_mapGenerator__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n  let html = '';\r\n\r\n  while (arr.length !=0) {\r\n    const position = Math.round(arr.length * Math.random());\r\n    html += arr.splice(position, 1);\r\n  }\r\n\r\n  document.getElementById('root').innerHTML = html;\r\n}\n\n//# sourceURL=webpack:///./src/squaresToPage.js?");
 
 /***/ })
 

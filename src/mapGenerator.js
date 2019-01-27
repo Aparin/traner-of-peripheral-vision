@@ -1,30 +1,12 @@
 export default function mapGenerator() {
-  let green = 0, red = 0;
   let arr = [];
 
-  for (let i = 1; i < 26; i++) {
-    const rand = Math.random();
-
-    if (green === 13) {
-      red++;
-      arr.push('red');
-      continue;
-    }
-
-    if (red === 12) {
-      green++;
-      arr.push('green');
-      continue;
-    }
-
-    if (rand >= 0.5) {
-      green++;
-      arr.push('green');
-    }
-    else {
-      red++;
-      arr.push('red');
-    }
+  for (let red = 1; red <= 12; red++) {
+    arr.push(`<div id="red${red}" class="red">${red}</div>`);
   }
-  return [red, green, arr];
+  for (let green = 1; green <= 13; green++) {
+    arr.push(`<div id="green${green}" class="green">${green}</div>`);
+  }
+
+  return arr;
 }

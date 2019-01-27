@@ -1,4 +1,4 @@
 import './main.css'
-import mapGenerator from './mapGenerator';
+import squaresToPage from './squaresToPage';
 
-console.log(mapGenerator());
+squaresToPage();
