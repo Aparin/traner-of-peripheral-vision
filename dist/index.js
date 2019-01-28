@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"h1,\\r\\nh2 {\\r\\n    color: blue;\\r\\n    margin: 0 auto;\\r\\n}\\r\\n\\r\\n#root {\\r\\n    width: 680px;\\r\\n}\\r\\n\\r\\n.red,\\r\\n.green {\\r\\n    color: white;\\r\\n    font-size: 18px;\\r\\n    font-family: Georgia, 'Times New Roman', Times, serif;\\r\\n    width: 120px;\\r\\n    height: 120px;\\r\\n    display: inline-block;\\r\\n    padding: 5px;\\r\\n    border: 1px solid white;\\r\\n}\\r\\n\\r\\n.red {\\r\\n    background-color: red;\\r\\n}\\r\\n\\r\\n.green {\\r\\n    background-color: green;\\r\\n}\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/main.css?./node_modules/css-loader/dist/cjs.js");
+eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"h1 {\\r\\n    color: blue;\\r\\n    margin: 0px auto;\\r\\n    margin-bottom: 15px;\\r\\n}\\r\\n\\r\\n#footer {\\r\\n    font-size: 22px;\\r\\n    width: 900px;\\r\\n    margin-top: 15px;\\r\\n}\\r\\n\\r\\n#root {\\r\\n    width: 680px;\\r\\n    display: inline-block;\\r\\n}\\r\\n\\r\\n#right {\\r\\n    display: inline-block;\\r\\n    vertical-align: top;\\r\\n    font-family: Georgia, 'Times New Roman', Times, serif;\\r\\n    font-size: 24px;\\r\\n}\\r\\n\\r\\n.red,\\r\\n.black {\\r\\n    color: white;\\r\\n    font-size: 22px;\\r\\n    font-family: Georgia, 'Times New Roman', Times, serif;\\r\\n    width: 120px;\\r\\n    height: 120px;\\r\\n    display: inline-block;\\r\\n    padding: 5px;\\r\\n    border: 1px solid white;\\r\\n}\\r\\n\\r\\n.red {\\r\\n    background-color: red;\\r\\n}\\r\\n\\r\\n.black {\\r\\n    background-color: black;\\r\\n}\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/main.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -139,7 +139,7 @@ eval("\n/**\n * When source maps are enabled, `style-loader` uses a link element
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _main_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./main.css */ \"./src/main.css\");\n/* harmony import */ var _main_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_main_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _squaresToPage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./squaresToPage */ \"./src/squaresToPage.js\");\n\r\n\r\n\r\nObject(_squaresToPage__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _main_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./main.css */ \"./src/main.css\");\n/* harmony import */ var _main_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_main_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _squaresToPage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./squaresToPage */ \"./src/squaresToPage.js\");\n/* harmony import */ var _stopwatch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./stopwatch */ \"./src/stopwatch.js\");\n\r\n\r\n\r\n\r\nObject(_squaresToPage__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\r\nconst stopwatch = new _stopwatch__WEBPACK_IMPORTED_MODULE_2__[\"default\"];\r\nstopwatch.start();\r\n\r\nsetTimeout(() => {\r\n    stopwatch.stop();\r\n}, 3000);\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
@@ -162,7 +162,7 @@ eval("\nvar content = __webpack_require__(/*! !../node_modules/css-loader/dist/c
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return mapGenerator; });\nfunction mapGenerator() {\r\n  let arr = [];\r\n\r\n  for (let red = 1; red <= 12; red++) {\r\n    arr.push(`<div id=\"red${red}\" class=\"red\">${red}</div>`);\r\n  }\r\n  for (let green = 1; green <= 13; green++) {\r\n    arr.push(`<div id=\"green${green}\" class=\"green\">${green}</div>`);\r\n  }\r\n\r\n  return arr;\r\n}\r\n\n\n//# sourceURL=webpack:///./src/mapGenerator.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return mapGenerator; });\nfunction mapGenerator() {\r\n  let arr = [];\r\n\r\n  for (let red = 1; red <= 12; red++) {\r\n    arr.push(`<div id=\"red${red}\" class=\"red\">${red}</div>`);\r\n  }\r\n  for (let black = 1; black <= 13; black++) {\r\n    arr.push(`<div id=\"black${black}\" class=\"black\">${black}</div>`);\r\n  }\r\n\r\n  return arr;\r\n}\r\n\n\n//# sourceURL=webpack:///./src/mapGenerator.js?");
 
 /***/ }),
 
@@ -175,6 +175,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 "use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return squaresToPage; });\n/* harmony import */ var _mapGenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./mapGenerator */ \"./src/mapGenerator.js\");\n\r\n\r\nfunction squaresToPage() {\r\n  const arr = Object(_mapGenerator__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\r\n  let html = '';\r\n\r\n  while (arr.length !=0) {\r\n    const position = Math.round(arr.length * Math.random());\r\n    html += arr.splice(position, 1);\r\n  }\r\n\r\n  document.getElementById('root').innerHTML = html;\r\n}\n\n//# sourceURL=webpack:///./src/squaresToPage.js?");
+
+/***/ }),
+
+/***/ "./src/stopwatch.js":
+/*!**************************!*\
+  !*** ./src/stopwatch.js ***!
+  \**************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return Stopwatch; });\nclass Stopwatch {\r\n    start() {\r\n        const startTime = new Date();\r\n        this.stopwatch = setInterval(() => {\r\n            const currentTime = new Date();\r\n            const gap = (currentTime - startTime);\r\n            let ms = gap % 1000;\r\n            let sec = ((gap - ms) / 1000);\r\n\r\n            if (sec < 10) sec = '0' + sec;\r\n            if (ms < 10) {\r\n                ms = '00' + ms;\r\n            } else if (ms < 100) {\r\n                ms = '0' + ms;\r\n            }\r\n            document.getElementById('timer').innerText = `${sec} сек: ${ms} мс`;\r\n        }, 50);\r\n    }\r\n    stop() {\r\n        clearInterval(this.stopwatch);\r\n    }\r\n}\n\n//# sourceURL=webpack:///./src/stopwatch.js?");
 
 /***/ })
 
