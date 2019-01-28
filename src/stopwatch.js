@@ -14,7 +14,7 @@ export default class Stopwatch {
                 ms = '0' + ms;
             }
             document.getElementById('timer').innerText = `${sec} сек: ${ms} мс`;
-        }, 50);
+        }, 11);
     }
     stop() {
         clearInterval(this.stopwatch);
