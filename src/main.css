@@ -18,6 +18,14 @@ h1 {
     padding: 0 20px;
 }
 
+#name {
+    font-size: 18px;
+    padding: 5px;
+    display: block;
+    margin: 15px auto;
+    width: 236px;
+}
+
 #buttonStart {
     display: block;
     padding: 10px;
@@ -26,6 +34,7 @@ h1 {
     font-size: 20px;
     color: darkblue;
     background-color: lightyellow;
+    width: 250px;
 }
 
 #right {
@@ -33,6 +42,7 @@ h1 {
     vertical-align: top;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 24px;
+    width: 500px;
 }
 
 .red,

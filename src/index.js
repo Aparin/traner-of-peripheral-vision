@@ -1,9 +1,11 @@
 import './main.css'
+import { currentUser } from './state';
 import squaresToPage from './squaresToPage';
 import Stopwatch from './stopwatch';
-import logic1Level from './logic1Level';
+import level1Logic from './level1Logic';
 
 const startTest = () => {
+    currentUser.addName();
     squaresToPage();
     const stopwatch = new Stopwatch;
     stopwatch.start();
@@ -16,9 +18,10 @@ root.innerHTML = `
     <p>Ваша задача последовательно нажимать на красные квадраты с 1 по 12, а потом на чёрные, с 13 по 1</p>
     <p>Постарайтесь сделать это без ошибок, и как можно быстрее</p>
     <p>С нажатием кнопки 'Начать тренировку' загрузятся квадраты и запустится секундомер. Секундомер остановиться только тогда, когда вы пройдёте до конца</p>
+    <input id='name' placeholder="Введите своё ФИО" />
     <button id = "buttonStart">Начать тренировку</button>
 `;
 buttonStart.onclick = () => {
     const stopwatch = startTest();
-    logic1Level(stopwatch);
+    level1Logic(stopwatch);
 };
