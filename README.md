@@ -2,7 +2,7 @@
 
 ## Демо
 
-Посмотреть в работе: https://efeto.ru/apps/tr/,
+Посмотреть в работе: https://efeto.ru/apps/tr/.
 
 ## Задание 
 
