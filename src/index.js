@@ -1,28 +1,15 @@
 /* eslint-disable no-undef */
 import './main.css';
-import { currentUser } from './state';
-import squaresToPage from './squaresToPage';
-import Stopwatch from './stopwatch';
-import level1Logic from './level1Logic';
-
-const startTest = () => {
-  currentUser.addName();
-  squaresToPage();
-  const stopwatch = new Stopwatch();
-  stopwatch.start();
-  return stopwatch;
-};
+import start from './start';
 
 root.innerHTML = `
-    <h2>Задание</h2>
-    <p>В тесте будет 12 красных квадратов, пронумерованных с 1 до 12, и 13 чёрных квадратов пронумерованных с 1 до 13.</p>
-    <p>Ваша задача последовательно нажимать на красные квадраты с 1 по 12, а потом на чёрные, с 13 по 1.</p>
-    <p>Постарайтесь сделать это без ошибок, и как можно быстрее.</p>
-    <p>С нажатием кнопки 'Начать тренировку' загрузятся квадраты и запустится секундомер. Секундомер остановиться только тогда, когда вы пройдёте до конца.</p>
-    <input id='name' placeholder="Введите своё ФИО" />
-    <button id = "buttonStart">Начать тренировку</button>
+  <img src="./img1.jpg" />
+  <br />
+  <div class="blockquote">
+  "Умение видеть пространство осуществляется за счет бокового или периферийного зрения, которое в сочетании с технической подготовкой является основой тактического мастерства газодымозащитника"
+  </div>
+  <button id = "buttonNext">Далее</button>
 `;
-buttonStart.onclick = () => {
-  const stopwatch = startTest();
-  level1Logic(stopwatch);
+buttonNext.onclick = () => {
+  start();
 };

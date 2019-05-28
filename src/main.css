@@ -1,8 +1,31 @@
+#conteiner {
+    display: block;
+    margin: 0 auto;
+    width: 1180px;
+}
+
+img {
+    width: 800px;
+    display: block;
+    margin: 0 auto;
+}
+
+.blockquote {
+    border-left: red 5px solid;
+    margin: 15px;
+    padding-left: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 22px;
+    font-style: italic;
+    line-height: 30px;
+}
+
 h1 {
-    color: blue;
-    margin: 0px auto;
+    color: red;
+    text-align: center;
+    padding-left: 40px;
     margin-bottom: 15px;
-    font-size: 32px;
+    font-size: 40px;
 }
 
 h2 {
@@ -11,11 +34,20 @@ h2 {
 
 #footer {
     font-size: 22px;
-    width: 900px;
+    width: 1180px;
     margin-top: 15px;
+    text-align: center;
 }
 
-#root {
+.rootStart {
+    width: 1180px;
+    display: inline-block;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0 20px;
+}
+
+.root {
     width: 680px;
     display: inline-block;
     font-size: 20px;
@@ -31,7 +63,7 @@ h2 {
     width: 236px;
 }
 
-#buttonStart {
+button {
     display: block;
     padding: 10px;
     margin: 0px auto;
@@ -47,7 +79,7 @@ h2 {
     vertical-align: top;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 24px;
-    width: 500px;
+    width: 450px;
 }
 
 .red,

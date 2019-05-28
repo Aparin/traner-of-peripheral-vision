@@ -10,19 +10,21 @@
 </head>
 
 <body>
-    <h1>Тренажёр периферийного зрения пожарных-спасателей</h1>
-    <h2>Traner of peripheral vision for firefighters-lifeguards</h2>
-    <noscript><p>Извините, для работы приложения нужен включённый JavaScript</p></noscript>
-    <div id='root'></div>
-    <div id='right'>
-        <p>Секундомер: <span id='timer'>00:00.00</span></p>
-        <p>Ошибок: <span id='mistake'>0</span></p>
-        <div id='result'>
-            <span id='resultMessage'></span>
+    <div id="conteiner">
+        <h1>Тренажёр периферийного зрения пожарных-спасателей</h1>
+        <noscript><p>Извините, для работы приложения нужен включённый JavaScript</p></noscript>
+        <div id='root' class="rootStart"></div>
+        <div id='right' style="display: none;">
+            <p>Секундомер: <span id='timer'>00:00.00</span></p>
+            <p>Ошибок: <span id='mistake'>0</span></p>
+            <div id='result'>
+                <span id='resultMessage'></span>
+            </div>
         </div>
+        <hr>
+        <div id="footer">Тренажёр разработан по идее Апарина А.А. для проекта "Развитие периферийного зрения пожарных-спасателей"</div>
     </div>
-    <hr>
-    <div id="footer">Тренажёр разработан по идее Апарина А.А. для проекта "Развитие периферийного зрения пожарных-спасателей"</div>
+
     <script src="index.js"></script>
 </body>
 
