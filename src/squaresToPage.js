@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import mapGenerator from './mapGenerator';
 
 export default function squaresToPage() {
